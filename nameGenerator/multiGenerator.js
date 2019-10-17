@@ -1,4 +1,5 @@
 
+debugger;
 //Begin character variables
     let name = '';
     let age = 140
@@ -87,7 +88,7 @@
 // Begin character generation sequence
     function generateCharacter() {
         //Generate name based on race    
-            if (race === 'Human') {
+            if (race() === 'Human') {
                 name = generateHuman();
             } else if (race === 'Elf') {
                 name = generateElf();
