@@ -31,7 +31,7 @@ function generateLetter(which, source) {
     } else {
         return source[i].toLowerCase();
     }
- 
+
 };
 
 function chooseDictionary(whichName) {
@@ -52,12 +52,15 @@ function chooseDictionary(whichName) {
 };
 
 function generateName(nameToGenerate) {
-    for (let i = 0; i <= 7; i++) {
-       nameToGenerate += generateLetter(nameToGenerate, chooseDictionary(nameToGenerate));
+    let l = Math.floor(Math.random() *10)
+    for (let i = 0; i <= l; i++) {
+    nameToGenerate += generateLetter(nameToGenerate, chooseDictionary(nameToGenerate));
     };
     return nameToGenerate;
 };
 
 function generateHuman() {
-   document.getElementById("generatedName").innerHTML = `Your character is a human named ${generateName(name.firstName)}.`;
+    let generatedFirst = generateName(name.firstName);
+    let generatedLast = generateName(name.lastName);
+
 };

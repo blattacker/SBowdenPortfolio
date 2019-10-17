@@ -1,7 +1,11 @@
+import generateHuman from 'generateHuman.js';
+import generateElf from 'generateElf.js';
+
 let race = '';
 let age = '';
 let gender = '';
 let name = '';
+
 
 function generatedName() {
     switch (document.getElementsByName("race").value) {
@@ -68,7 +72,7 @@ let areIs = () => {
 };
 
 function generateCharacter() {
-    document.getElementById("generatedCharacter").innerHTML = `Your character is a${race} named ${generatedName}. ${pronoun} ${areIs} ${age} years old.`;
+    document.getElementById("generatedCharacter").innerHTML = `Your character is a${race} named ${generatedFirst} ${generatedLast}. ${pronoun} ${areIs} ${age} years old.`;
  };
 
  document.getElementById("generate").addEventListener("click", generateCharacter);
