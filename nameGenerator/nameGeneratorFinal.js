@@ -23,10 +23,15 @@ let dictionaryChooser = (stagedName) => {
     };
 };
 
-function generateLetter(source) {
+function generateLetter(which, source) {
     let i = Math.floor(Math.random()* source.length);
     name.lastStaged = source[i];
-    return source[i];
+    if (which.length === 0) {
+        return source[i];
+    } else {
+        return source[i].toLowerCase();
+    }
+ 
 };
 
 function chooseDictionary(whichName) {
@@ -48,14 +53,11 @@ function chooseDictionary(whichName) {
 
 function generateName(nameToGenerate) {
     for (let i = 0; i <= 7; i++) {
-       nameToGenerate += generateLetter(chooseDictionary(nameToGenerate));
+       nameToGenerate += generateLetter(nameToGenerate, chooseDictionary(nameToGenerate));
     };
     return nameToGenerate;
 };
 
-function generateButton() {
-   document.getElementById("generatedName").innerHTML = generateName(name.firstName);
+function generateHuman() {
+   document.getElementById("generatedName").innerHTML = `Your character is a human named ${generateName(name.firstName)}.`;
 };
-
-
-document.getElementById("generate").addEventListener("click", generateButton);

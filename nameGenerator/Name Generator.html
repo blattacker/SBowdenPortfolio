@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     </head>
     <body>
-        <button id="generate">Generate</button>
-        <p id="generatedName"></p>
-        <script src="nameGeneratorFinal.js"></script>
+        <div class="container">
+            <header>
+                <h1>Random Name Generator</h1>
+            </header>
+<!-- Begin characteristics selection section -->
+            <section class="selection">
+                <p>Choose your race:</p>
+<!-- Begin radial buttons for race -->
+
+                <input type="radio" name="race" id="elf" value="0">
+                <label for="elf">Elf</label>
+
+                <input type="radio" name="race" id="dwarf" value="1">
+                <label for="dwarf">Dwarf</label>
+
+                <input type="radio" name="race" id="human" value="2">
+                <label for="human">Human</label>
+
+<!-- End radial buttons for race -->
+
+                <p>Choose an age range:</p>
+<!-- Begin radial buttons for age -->
+
+                <input type="radio" name="age" id="young" value="0">
+                <label for="young">Younger</label>
+
+                <input type="radio" name="age" id="middle" value="1">
+                <label for="middle">Middle Aged</label>
+
+                <input type="radio" name="age" id="old" value="2">
+                <label for="old">Older</label>
+
+<!-- End radial buttons for age-->
+
+                <p>Choose a gender:</p>
+ <!-- Begin radial buttons for gender -->
+
+                <input type="radio" name="gender" id="male" value="0">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="1">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="nonbinary" value="2">
+                <label for="nonbinary">Non-Binary/Gender Nonconforming</label>
+
+                <input type="radio" name="gender" id="random" value="3">
+                <label for="random">Choose for me</label>
+
+<!-- End radial buttons for gender -->
+            </section>
+<!-- End characteristics selection section -->
+            <section class="button">
+                <div class="buttongrid">
+                    <div class="buttonarea">
+                        <button id="generate">Generate</button><br>
+                    </div>
+                </div>
+            </section>
+            <section class="output">
+                <p id="generatedName"></p>
+                <script src="multiGenerator.js"></script>
+            </section>
+            <footer>
+                <h4>Do I even need footer text?</h4>
+            </footer>
+        </div>
+        
     </body>
     
 </html>

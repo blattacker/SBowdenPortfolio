@@ -1,0 +1,104 @@
+html, body {
+    height: 90%;
+}
+/** Start Button styling */
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #506070;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+/** End Button styling */
+
+html {
+    background-color: slateblue;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+#generatedName {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.container {
+    display: grid;
+    max-width: 70%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    grid-gap: 3px;
+    grid-template-areas: "header header"
+                         "selection output"
+                         "button output"
+                         "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    align-content: space-around;
+}
+
+header {
+    background-color: dodgerblue;
+    grid-area: header;
+    text-align: center;
+}
+
+.selection {
+    background-color: beige;
+    grid-area: selection;
+}
+
+.button {
+    background-color: slategrey;
+    grid-area: button;
+}
+
+.output {
+    background-color: rebeccapurple;
+    grid-area: output;
+    text-align: center;
+}
+
+footer {
+    background-color: dodgerblue;
+    grid-area: footer;
+    text-align: center;
+}
+
+.buttongrid {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.buttonarea { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    font-size: .75rem;
+}
