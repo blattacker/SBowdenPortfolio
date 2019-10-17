@@ -14,13 +14,13 @@
                 <p>Choose your race:</p>
 <!-- Begin radial buttons for race -->
 
-                <input type="radio" name="race" id="elf" value="0">
+                <input type="radio" name="race" value="0" onsubmit="race(this.value);">
                 <label for="elf">Elf</label>
 
-                <input type="radio" name="race" id="dwarf" value="1">
+                <input type="radio" name="race" value="1" onsubmit="race(this.value);"> 
                 <label for="dwarf">Dwarf</label>
 
-                <input type="radio" name="race" id="human" value="2">
+                <input type="radio" name="race" value="2" onsubmit="race(this.value);">
                 <label for="human">Human</label>
 
 <!-- End radial buttons for race -->
@@ -60,12 +60,12 @@
             <section class="button">
                 <div class="buttongrid">
                     <div class="buttonarea">
-                        <button id="generate">Generate</button><br>
+                        <input type="submit" id="generate" label="Generate"></button><br>
                     </div>
                 </div>
             </section>
             <section class="output">
-                <p id="generatedName"></p>
+                <p id="generatedCharacter"></p>
                 <script src="multiGenerator.js"></script>
             </section>
             <footer>
