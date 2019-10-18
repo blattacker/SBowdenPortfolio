@@ -186,11 +186,13 @@ function generateHuman() {
 // End generating values for variables
 
 // Testing Area
-let raceValue = document.getElementsByName('race');
-let genderValue = document.getElementsByName('gender');
-let ageValue = document.getElementsByName('age');
+let raceValue = '';
+let genderValue = '';
+let ageValue = '';
 function getRadioValues() {
-
+     raceValue = document.getElementsByName('race');
+     genderValue = document.getElementsByName('gender');
+     ageValue = document.getElementsByName('age');
 
     for (i = 0; i < raceValue.length; i++) {
         if(raceValue[i].checked)
@@ -224,7 +226,7 @@ function getRadioValues() {
             };
         //End name generation
 
-        document.getElementById("generatedCharacter").innerHTML = `Your character is a ${race(raceValue)} ${gender(genderValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
+        document.getElementById("generatedCharacter").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
     };
 // End character generation sequence
 
