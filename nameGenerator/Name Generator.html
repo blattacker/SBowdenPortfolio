@@ -10,31 +10,33 @@
                 <h1>Random Name Generator</h1>
             </header>
 <!-- Begin characteristics selection section -->
-            <section class="selection">
+            <form name="characterInfo" id="charForm">
+                <section class="selection">
                 <p>Choose your race:</p>
 <!-- Begin radial buttons for race -->
 
-                <input type="radio" name="race" value="0" onsubmit="race(this.value);">
+                <input type="radio" id="Elf" name="race" value="0">
                 <label for="elf">Elf</label>
 
-                <input type="radio" name="race" value="1" onsubmit="race(this.value);"> 
+                <input type="radio" id="Dwarf" name="race" value="1"> 
                 <label for="dwarf">Dwarf</label>
 
-                <input type="radio" name="race" value="2" onsubmit="race(this.value);">
+                <input type="radio" id="Human" name="race" value="2">
                 <label for="human">Human</label>
+
 
 <!-- End radial buttons for race -->
 
                 <p>Choose an age range:</p>
 <!-- Begin radial buttons for age -->
 
-                <input type="radio" name="age" id="young" value="0">
+                <input type="radio" id="young" name="age" value="0">
                 <label for="young">Younger</label>
 
-                <input type="radio" name="age" id="middle" value="1">
+                <input type="radio" id="middle" name="age" value="1">
                 <label for="middle">Middle Aged</label>
 
-                <input type="radio" name="age" id="old" value="2">
+                <input type="radio" id="old" name="age" value="2">
                 <label for="old">Older</label>
 
 <!-- End radial buttons for age-->
@@ -53,6 +55,7 @@
 
                 <input type="radio" name="gender" id="random" value="3">
                 <label for="random">Choose for me</label>
+                </form>
 
 <!-- End radial buttons for gender -->
             </section>
@@ -60,7 +63,7 @@
             <section class="button">
                 <div class="buttongrid">
                     <div class="buttonarea">
-                        <input type="submit" id="generate" label="Generate"><br>
+                        <button id="generate" label="Generate" onclick="getRadioValues()">Generate</button><br>
                     </div>
                 </div>
             </section>

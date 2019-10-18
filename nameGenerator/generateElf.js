@@ -26,7 +26,4 @@
         getHouseName();
         return elvenName;
     }
-
-    //Call generate function
-    generateElf();
 //End Elf name generator
