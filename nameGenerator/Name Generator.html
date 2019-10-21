@@ -13,52 +13,8 @@
 <!-- Begin characteristics selection section -->
             
                 <section class="selection">
-                <p>Choose your race:</p>
-<!-- Begin radial buttons for race -->
-
-                <input type="radio" id="Elf" name="race" value="0">
-                <label for="Elf">Elf</label>
-
-                <input type="radio" id="Dwarf" name="race" value="1"> 
-                <label for="Dwarf">Dwarf</label>
-
-                <input type="radio" id="Human" name="race" value="2">
-                <label for="Human">Human</label>
-
-
-<!-- End radial buttons for race -->
-
-                <p>Choose an age range:</p>
-<!-- Begin radial buttons for age -->
-
-                <input type="radio" id="young" name="age" value="0">
-                <label for="young">Younger</label>
-
-                <input type="radio" id="middle" name="age" value="1">
-                <label for="middle">Middle Aged</label>
-
-                <input type="radio" id="old" name="age" value="2">
-                <label for="old">Older</label>
-
-<!-- End radial buttons for age-->
-
-                <p>Choose a gender:</p>
- <!-- Begin radial buttons for gender -->
-
-                <input type="radio" name="gender" id="male" value="0">
-                <label for="male">Male</label>
-
-                <input type="radio" name="gender" id="female" value="1">
-                <label for="female">Female</label>
-
-                <input type="radio" name="gender" id="nonbinary" value="2">
-                <label for="nonbinary">Non-Binary/Gender Nonconforming</label>
-
-                <input type="radio" name="gender" id="random" value="3">
-                <label for="random">Choose for me</label>
-            
-
-<!-- End radial buttons for gender -->
+                
+                </select>
             </section>
 <!-- End characteristics selection section -->
             <section class="button">
@@ -69,7 +25,34 @@
                 </div>
             </section>
             <section class="output">
-                <p id="generatedCharacter"></p>
+            
+                <div id="contentArea">
+                    I want to create a
+                        <select name="gender" id="Gender" class="dropdown">
+                                <option value="-1"></option>
+                                <option value="0">Male</option>
+                                <option value="1">Female</option>
+                                <option value="2">Nonbinary</option>
+                            </select>   
+                    
+                    <select name="race" id="Race" class="dropdown">
+                                <option value="1"></option>
+                                <option value="0">Elf</option>
+                                <option value="1">Dwarf</option>
+                                <option value="2">Human</option>
+                            </select>
+
+                            who is 
+                            <select name="age" id="Age" class="dropdown">
+                                    <option value="-1"></option>
+                                    <option value="0">Younger</option>
+                                    <option value="1">Average</option>
+                                    <option value="2">Older</option>
+                                </select>
+                            in age.
+
+                </div>
+                <div id="results"></div>
                 <script src="multiGenerator.js"></script>
             </section>
             <footer>

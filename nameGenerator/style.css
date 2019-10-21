@@ -31,7 +31,7 @@ html {
     font-weight: 900;
 }
 
-#generatedName {
+#results {
     font-size: 1.5rem;
     color: #333333;
 }
@@ -75,7 +75,7 @@ header {
 }
 
 .output {
-    background-color: rebeccapurple;
+    background-color: white;
     grid-area: output;
     text-align: center;
 }
@@ -101,4 +101,26 @@ footer {
 
 label {
     font-size: .75rem;
+}
+
+.dropdown {
+    background-color: rgba(100,100,100,0);
+    border-color: rgba(100,100,100,0);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    position: relative;
+    
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-decoration: underline;
+    width: 8rem;
+    text-align-last: center;
+    white-space: nowrap;
 }

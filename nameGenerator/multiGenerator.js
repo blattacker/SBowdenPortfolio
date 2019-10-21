@@ -190,24 +190,24 @@ let raceValue = '';
 let genderValue = '';
 let ageValue = '';
 function getRadioValues() {
-     raceValue = document.getElementsByName('race');
-     genderValue = document.getElementsByName('gender');
-     ageValue = document.getElementsByName('age');
+     raceValue = document.getElementById('Race').value;
+     genderValue = document.getElementById('Gender').value;
+     ageValue = document.getElementById('Age').value;
 
-    for (i = 0; i < raceValue.length; i++) {
+    /*for (i = 0; i < raceValue.length; i++) {
         if(raceValue[i].checked)
         raceValue = raceValue[i].value;
-    }
+    } */
 
-    for (i = 0; i < genderValue.length; i++) {
+    /* for (i = 0; i < genderValue.length; i++) {
         if(genderValue[i].checked)
         genderValue = genderValue[i].value;
-    }
+    } */
 
-    for (i = 0; i < ageValue.length; i++) {
+    /* for (i = 0; i < ageValue.length; i++) {
         if(ageValue[i].checked)
         ageValue = ageValue[i].value;
-    }
+    } */
 
 
 }
@@ -226,7 +226,7 @@ function getRadioValues() {
             };
         //End name generation
 
-        document.getElementById("generatedCharacter").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
+        document.getElementById("results").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
     };
 // End character generation sequence
 
