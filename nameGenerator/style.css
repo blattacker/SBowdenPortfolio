@@ -105,11 +105,10 @@ label {
 
 .dropdown {
     background-color: rgba(100,100,100,0);
-    border-color: rgba(100,100,100,0);
+    border-color: transparent transparent rgba(100,100,100,1) transparent;
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
-    text-decoration: underline;
     position: relative;
     
 }
@@ -120,14 +119,12 @@ select {
     appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    text-decoration: underline;
     width: 8rem;
     text-align-last: center;
-    white-space: nowrap;
 }
 
 .dropdown:focus {
-    border-color: rgba(100,100,100,0);
-    background-color: rgba(100,100,100,0);
-    outline: none;
+    border-color: transparent transparent rgba(0,0,0,1) transparent;
+    background-color: rgba(0,0,0,0.04);
+    outline: 0px;
 }
