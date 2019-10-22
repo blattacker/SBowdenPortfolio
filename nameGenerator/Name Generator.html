@@ -5,18 +5,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
         <title>A Generator for all your NPC needs</title>
     </head>
+
     <body>
         <div class="container">
             <header>
                 <h1>Fantasy Character Generator</h1>
             </header>
-<!-- Begin characteristics selection section -->
-            
+
+<!-- Begin characteristics selection section -->            
                 <section class="selection">
                 
                 </select>
             </section>
 <!-- End characteristics selection section -->
+
+
             <section class="button">
                 <div class="buttongrid">
                     <div class="buttonarea">
@@ -30,14 +33,14 @@
                     <div id="content">
                     I want to create a
                         <select name="gender" id="Gender" class="dropdown">
-                                <option value="-1"></option>
+                                <option value="-1">(gender)</option>
                                 <option value="0">Male</option>
                                 <option value="1">Female</option>
                                 <option value="2">Nonbinary</option>
                             </select>   
                     
                     <select name="race" id="Race" class="dropdown">
-                                <option value="1"></option>
+                                <option value="-1">(race)</option>
                                 <option value="0">Elf</option>
                                 <option value="1">Dwarf</option>
                                 <option value="2">Human</option>
@@ -45,7 +48,7 @@
 
                             who is 
                             <select name="age" id="Age" class="dropdown">
-                                    <option value="-1"></option>
+                                    <option value="-1">(age range)</option>
                                     <option value="0">Younger</option>
                                     <option value="1">Average</option>
                                     <option value="2">Older</option>

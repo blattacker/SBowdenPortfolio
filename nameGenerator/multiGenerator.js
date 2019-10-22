@@ -165,6 +165,58 @@ function generateHuman() {
 
 //End data collection from page
 
+//Age generators
+
+// Elf generator
+function generageElf() {
+    if (ageRange(ageValue) === 'young') {
+        return (16 + (Math.floor(Math.random() * 225)));
+    } else if (ageRange(ageValue) === 'middle') {
+        return (250 + (Math.floor(Math.random() * 225)));
+    } else if(ageRange(ageValue) === 'old') {
+        return (500 + (Math.floor(Math.random() * 225)));
+    } else {
+        return 250;
+    };
+};
+
+function generageDwarf() {
+    if (ageRange(ageValue) === 'young') {
+        return (16 + (Math.floor(Math.random() * 117)));
+    } else if (ageRange(ageValue) === 'middle') {
+        return (115 + (Math.floor(Math.random() * 117)));
+    } else if(ageRange(ageValue) === 'old') {
+        return (233 + (Math.floor(Math.random() * 117)));
+    } else {
+        return 250;
+    };
+};
+
+function generageHuman() {
+    if (ageRange(ageValue) === 'young') {
+        return (16 + (Math.floor(Math.random() * 14)));
+    } else if (ageRange(ageValue) === 'middle') {
+        return (30 + (Math.floor(Math.random() * 20)));
+    } else if(ageRange(ageValue) === 'old') {
+        return (50 + (Math.floor(Math.random() * 35)));
+    } else {
+        return 250;
+    };
+};
+
+function generateAge() {
+    if (race(raceValue) === 'Elf') {
+        return generageElf();
+    } else if (race(raceValue) === 'Dwarf') {
+        return generageDwarf();
+    } else if (race(raceValue) === 'Human') {
+        return generageHuman();
+    } else {
+        return 150;
+    };
+};
+//End age generators
+
 //Begin generating values for variables
     let pronoun = () => {
         if (gender(genderValue) === 'male') {
@@ -193,28 +245,10 @@ function getRadioValues() {
      raceValue = document.getElementById('Race').value;
      genderValue = document.getElementById('Gender').value;
      ageValue = document.getElementById('Age').value;
-
-    /*for (i = 0; i < raceValue.length; i++) {
-        if(raceValue[i].checked)
-        raceValue = raceValue[i].value;
-    } */
-
-    /* for (i = 0; i < genderValue.length; i++) {
-        if(genderValue[i].checked)
-        genderValue = genderValue[i].value;
-    } */
-
-    /* for (i = 0; i < ageValue.length; i++) {
-        if(ageValue[i].checked)
-        ageValue = ageValue[i].value;
-    } */
-
-
 }
 
 // Begin character generation sequence
     function generateCharacter() {
-        // Zero out all values
 
         //Generate name based on race    
             if (race(raceValue) === 'Human') {
@@ -226,6 +260,11 @@ function getRadioValues() {
             };
         //End name generation
 
+        // Age generation
+        age = generateAge();
+        //End age generation
+
+        //Output generated values
         document.getElementById("results").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
     };
 // End character generation sequence
@@ -233,51 +272,3 @@ function getRadioValues() {
 // Begin page specific commands
     document.getElementById("generate").addEventListener("click", generateCharacter);
 // End page specific commands
-
-
- /* TO DO
- Use the following code to make the selectors actually work:
-
- <!DOCTYPE html>
-<html>
-<script>
-function generateName(race) {
-	switch (race)
-	{
-	case "0":
-		document.getElementById("chosenRace").innerHTML = "Elf";
-		break
-	case "1":
-		document.getElementById("chosenRace").innerHTML = "Dwarf";
-		break
-	case "2":
-		document.getElementById("chosenRace").innerHTML = "Human";
-        break
-    case "3":
-    	document.getElementById("chosenRace").innerHTML = "Testing";
-        break
-    default:
-    	alert("something broke...");
-        break
-	}
-}
-</script>
-
-<h3>Choose Race</h3>
-<label>
-	<input type="radio" name="race" value="0" onclick="gender(this.value);"> Elf 
-</label>
-<label>
-	<input type="radio" name="race" value="1" onclick="generateName(this.value);"> Dwarf 
-</label>
-<label>
-	<input type="radio" name="race" value="2" onclick="generateName(this.value);"> Human 
-</label>
-<label>
-	<input type="radio" name="race" value="3" onclick="generateName(this.value);"> Random
-</label><br><br>
-<p id="chosenRace"></p>
-</body>
-</html>
-
-END TO DO */

@@ -11,29 +11,37 @@ button {
     background: #506070;
     color: #ffffff;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
     transition: background 250ms ease-in-out, 
                 transform 150ms ease;
+    word-wrap: break-word;
     -webkit-appearance: none;
     -moz-appearance: none;
+    outline: 0px;
+    width: 100%;
 }
 
 button:active {
-    transform: scale(0.99);
+    transform: scale(0.75);
+    outline: 0px;
 }
 /** End Button styling */
 
 html {
     background-color: slateblue;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 #results {
     font-size: 1.5rem;
-    color: #333333;
+    color: #666;
+    font-weight: 600;
+    transition: 
+    transition-duration: 1s;
 }
 
 h1 {
@@ -87,8 +95,6 @@ footer {
 }
 
 .buttongrid {
-    height: 100%;
-    width: 100%;
     position: relative;
 }
 
