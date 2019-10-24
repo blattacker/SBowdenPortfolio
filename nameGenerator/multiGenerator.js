@@ -249,8 +249,10 @@ function getRadioValues() {
 
 // Begin character generation sequence
     function generateCharacter() {
-
-        //Generate name based on race    
+        const results = document.querySelector('#results');
+        results.style.opacity = 0;
+        //Generate name based on race  
+        setTimeout (function() {  
             if (race(raceValue) === 'Human') {
                 name = generateHuman();
             } else if (race(raceValue) === 'Elf') {
@@ -266,6 +268,8 @@ function getRadioValues() {
 
         //Output generated values
         document.getElementById("results").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
+        results.style.opacity = 1;
+        }, 250);
     };
 // End character generation sequence
 

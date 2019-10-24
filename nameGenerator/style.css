@@ -14,7 +14,6 @@ button {
     font-size: 2rem;
     font-weight: 500;
     cursor: pointer;
-    /* text-align: center; */
     transition: background 250ms ease-in-out, 
                 transform 150ms ease;
     word-wrap: break-word;
@@ -40,8 +39,7 @@ html {
     font-size: 1.5rem;
     color: #666;
     font-weight: 600;
-    transition: 
-    transition-duration: 1s;
+    transition: .25s ease-in-out;
 }
 
 h1 {
