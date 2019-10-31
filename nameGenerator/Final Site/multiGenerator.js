@@ -110,16 +110,16 @@ function generateHuman() {
         const race = (raceValue) => {
             switch (raceValue) {
                 case "0":
-                    return 'Elf';
+                    return 'elf';
                     break;
                 case "1":
-                    return 'Dwarf';
+                    return 'dwarf';
                     break;
                 case "2":
-                    return "Human";
+                    return "human";
                     break;
                 default:
-                    return "Error";
+                    return "error";
                     break;
             };
         };
@@ -205,11 +205,11 @@ function generageHuman() {
 };
 
 function generateAge() {
-    if (race(raceValue) === 'Elf') {
+    if (race(raceValue) === 'elf') {
         return generageElf();
-    } else if (race(raceValue) === 'Dwarf') {
+    } else if (race(raceValue) === 'dwarf') {
         return generageDwarf();
-    } else if (race(raceValue) === 'Human') {
+    } else if (race(raceValue) === 'human') {
         return generageHuman();
     } else {
         return 150;
@@ -253,9 +253,9 @@ function getRadioValues() {
         results.style.opacity = 0;
         //Generate name based on race  
         setTimeout (function() {  
-            if (race(raceValue) === 'Human') {
+            if (race(raceValue) === 'human') {
                 name = generateHuman();
-            } else if (race(raceValue) === 'Elf') {
+            } else if (race(raceValue) === 'elf') {
                 name = generateElf();
             } else {
                 name = 'Error';
@@ -268,12 +268,25 @@ function getRadioValues() {
 
         //Output generated values
         //document.getElementById("results").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
-        document.getElementById("results").innerHTML = `<h2 style="line-height: 2pt;">${name}</h2> <p>is a ${age} year old ${gender(genderValue)} ${race(raceValue)}.</p>`;
+        document.getElementById("results").innerHTML = `<h2>${name}</h2> A ${gender(genderValue)} ${race(raceValue)} who is ${age} years old .`;
         results.style.opacity = 1;
         }, 250);
     };
 // End character generation sequence
 
-// Begin page specific commands
+const minNumber = 0;
+const maxNumber = 2;
+
+function randomizeCharacter() {
+    function characterRandomizer(min, max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+    };
+    document.getElementById("Race").value = characterRandomizer(minNumber, maxNumber);
+    document.getElementById("Gender").value = characterRandomizer(minNumber, maxNumber);
+    document.getElementById("Age").value = characterRandomizer(minNumber, maxNumber);
+};
+
+// // Begin page specific commands
     document.getElementById("generate").addEventListener("click", generateCharacter);
-// End page specific commands
+    document.getElementById("randomize").addEventListener("click", randomizeCharacter);
+// // End page specific commands
