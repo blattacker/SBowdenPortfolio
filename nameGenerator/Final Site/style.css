@@ -1,5 +1,5 @@
 html {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Julius Sans One", sans-serif;
     height: 90%;
     color: #332;
 }
@@ -49,7 +49,7 @@ h1 {
     height: auto;
     position: absolute;
     text-align: center; */
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .69);
     /* top: 50%;
     left: 50%; */
     transform: translate(0%, 25%);
