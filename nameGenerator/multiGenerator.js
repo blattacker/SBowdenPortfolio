@@ -268,7 +268,7 @@ function getRadioValues() {
 
         //Output generated values
         //document.getElementById("results").innerHTML = `Your character is a ${gender(genderValue)} ${race(raceValue)} named ${name}. ${pronoun()} ${areIs()} ${age} years old.`;
-        document.getElementById("results").innerHTML = `${name}` + "<br />" + `is a ${age} year old ${gender(genderValue)} ${race(raceValue)}.`;
+        document.getElementById("results").innerHTML = `<h2>${name}</h2> <p>is a ${age} year old ${gender(genderValue)} ${race(raceValue)}.</p>`;
         results.style.opacity = 1;
         }, 250);
     };
