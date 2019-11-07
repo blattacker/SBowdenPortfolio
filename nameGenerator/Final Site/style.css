@@ -74,7 +74,7 @@ h1 {
     
 }
 #results {
-    transition: .25s ease-in-out;
+    transition: 200ms ease-in-out;
     grid-area: results;
 }
 
@@ -101,6 +101,7 @@ button {
     height: 50px;
     width: 150px;
     border-radius: 5px;
+    transition:all 95ms;
 }
 
 #generate {

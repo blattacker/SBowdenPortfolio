@@ -150,7 +150,7 @@ function generateHuman() {
                     return "human";
                     break;
                 default:
-                    return "error";
+                    return "dwarf";
                     break;
             };
         };
