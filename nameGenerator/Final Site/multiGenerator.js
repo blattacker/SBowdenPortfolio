@@ -5,6 +5,37 @@ debugger;
     let age = 140
 // End character variables
 
+// Begin Dwarf name generator
+
+const femFirst = ['Anbera', 'Artin', 'Audhild', 'Balifra', 'Barbena', 'Bardryn', 'Bolhild', 'Dagnal', 'Dariff', 'Delre', 'Diesa', 'Eldeth', 'Eridred', 'Falkrunn', 'Fallthra', 'Finellen', 'Gillydd', 'Gunnloda', 'Gurdis', 'Helgret', 'Helja', 'Hlin', 'Ilde', 'Jarana', 'Kathra', 'Kilia', 'Kristryd', 'Liftrasa', 'Marastyr', 'Mardred', 'Morana', 'Nalaed', 'Nora', 'Nurkara', 'Oriff', 'Ovina', 'Riswynn', 'Sannl', 'Therlin', 'Thordris', 'Torbera', 'Tordrid', 'Torgga', 'Urshar', 'Valida', 'Vistra', 'Vonana', 'Werydd', 'Whudred', 'Yurgunn'];
+const masFirst = ['Adrik', 'Alberich', 'Baern', 'Barendd', 'Beloril', 'Brottor', 'Dain', 'Dalgal', 'Darrak', 'Delg', 'Duergath', 'Dworic', 'Eberk', 'Einkil', 'Elaim', 'Erias', 'Fallond', 'Fargrim', 'Gardain', 'Gilthur', 'Gimgen', 'Gimurt', 'Harbek', 'Kildrak', 'Kilvar', 'Morgran', 'Morkral', 'Nalral', 'Nordak', 'Nuraval', 'Oloric', 'Olunt', 'Orsik', 'Oskar', 'Rangrim', 'Reirak', 'Rurik', 'Talkinn', 'Thoradin', 'Thorin', 'Thradal', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Uraim', 'Veit', 'Vonbin', 'Vondal', 'Whurbin'];
+const dwarfClan = ['Aranore', 'Balderk', 'Battlehammer', 'Bigtoe', 'Bloodkith', 'Bofdann', 'Brawnanvil', 'Brazzik', 'Broodfist', 'Burrowfound', 'Caebrek', 'Daerdahk', 'Dankil', 'Daraln', 'Deepdelver', 'Durthane', 'Eversharp', 'Fallack', 'Fireforge', 'Foamtankard', 'Frostbeard', 'Glanhig', 'Goblinbane', 'Goldfinder', 'Gorunn', 'Graybeard', 'Hammerstone', 'Helcral', 'Holderhek', 'Ironfist', 'Loderr', 'Lutgehr', 'Morigak', 'Orcfoe', 'Rakankrak', 'Ruby-Eye', 'Rumnaheim', 'Silveraxe', 'Silverstone', 'Steelfist', 'Stoutale', 'Strakeln', 'Strongheart', 'Thrahak', 'Torevir', 'Torunn', 'Trollbleeder', 'Trueanvil', 'Trueblood', 'Ungart'];
+let dwarfName = '';
+
+function getDwarf(dwarfGender){
+    const firstIndex = Math.floor(Math.random() * 50);
+    const clanIndex = Math.floor(Math.random() * 50);
+    dwarfName += dwarfGender[firstIndex] + ' ' + dwarfClan[clanIndex]
+}
+
+function generateDwarf() {
+    dwarfName = '';
+        if (gender(genderValue) === 'female') {
+            getDwarf(femFirst);
+        } else if (gender(genderValue) === 'male') {
+            getDwarf(masFirst);
+        } else {
+            const genderList = Math.floor(Math.random() * 2);
+            if (genderList > 0) {
+                getDwarf(femFirst);
+            } else {
+                getDwarf(masFirst);
+            };
+        };
+        return dwarfName;
+};
+// End Dwarf name generator
+
 // Begin Elf name generator
     //Define needed global variables
     const elvenPrefixes = ['Ael', 'Aer', 'Af', 'Ah', 'Al', 'Am', 'Ama', 'An', 'Ang', 'Ansr', 'Ar', 'Ari', 'Arn', 'Aza', 'Bael', 'Bes', 'Cael', 'Cal', 'Cas', 'Cla', 'Cor', 'Cy', 'Dae', 'Dho', 'Dre', 'Du', 'Eil', 'Eir', 'El', 'Er', 'Ev', 'Fera', 'Fi', 'Fir', 'Fis', 'Gael', 'Gar', 'Gil', 'Ha', 'Hu', 'Ia', 'Il', 'Ja', 'Jar', 'Ka', 'Kan', 'Ker', 'Keth', 'Koeh', 'Kor', 'Ky', 'La', 'Laf', 'Lam', 'Lue', 'Ly', 'Mai', 'Mal', 'Mara', 'My', 'Na', 'Nai', 'Nim', 'Nu', 'Ny', 'Py', 'Raer', 'Re', 'Ren', 'Rhy', 'Ry', 'Ru', 'Rua', 'Rum', 'Rid', 'Sae', 'Seh', 'Sel', 'Sha', 'She', 'Si', 'Sim', 'Sol', 'Sum', 'Syl', 'Ta', 'Tahl', 'Tha', 'Tho', 'Ther', 'Thro', 'Tia', 'Tra', 'Ty', 'Try', 'Uth', 'Ver', 'Vil', 'Von', 'Ya', 'Za', 'Zy'];
@@ -258,7 +289,7 @@ function getRadioValues() {
             } else if (race(raceValue) === 'elf') {
                 name = generateElf();
             } else {
-                name = 'Error';
+                name = generateDwarf();
             };
         //End name generation
 
