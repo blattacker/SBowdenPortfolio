@@ -101,7 +101,7 @@ button {
     height: 50px;
     width: 150px;
     border-radius: 5px;
-    transition:all 95ms;
+    transition: all 95ms;
 }
 
 #generate {
