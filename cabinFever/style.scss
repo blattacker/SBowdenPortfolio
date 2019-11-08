@@ -8,3 +8,24 @@
 // Font Stack
     $primary-font: sans-serif;
     $secondary-font: serif;
+
+    html {
+        background: $primary-color;
+        font-family: $secondary-font;
+    }
+
+    h1 {
+        font-family: $primary-font;
+        .title {
+            color: $quaternary-color;
+        }
+        .header {
+            color: $quinary-color;
+            font-family: $secondary-font;
+        }
+    }
+
+    p {
+        font-family: $secondary-font;
+        color: $tertiary-color;
+    }

@@ -1,16 +1,22 @@
-.nav p {
-  margin: 0;
-  padding: 0;
+html {
+  background: #F2E6D8;
+  font-family: serif;
+}
+
+h1 {
   font-family: sans-serif;
 }
-.nav h3 {
-  color: #333;
-  display: inline-block;
-  font-weight: 900;
+h1 .title {
+  color: #385DA6;
 }
-.nav h1 {
-  font-size: 3rem;
-  color: #236711;
+h1 .header {
+  color: #5080BF;
+  font-family: serif;
+}
+
+p {
+  font-family: serif;
+  color: #0D0D0D;
 }
 
 /*# sourceMappingURL=style.css.map */
