@@ -7,16 +7,37 @@ h1 {
   font-family: sans-serif;
 }
 h1 .title {
-  color: #385DA6;
+  color: #BF946F;
 }
 h1 .header {
-  color: #5080BF;
+  color: #085CA6;
   font-family: serif;
 }
 
 p {
   font-family: serif;
-  color: #0D0D0D;
+  color: #0A8CBF;
+}
+
+.jumbotron {
+  background-color: #BF946F;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+div {
+  background-color: #F2E6D8;
+}
+div .container {
+  background-color: #F2E6D8;
+}
+
+body {
+  background-color: #F2E6D8;
+}
+
+.btn {
+  background-color: #0869A6;
 }
 
 /*# sourceMappingURL=style.css.map */

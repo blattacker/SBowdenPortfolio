@@ -1,14 +1,15 @@
 // Color Palette
     $primary-color: #F2E6D8;
-    $secondary-color: #8C8987;
-    $tertiary-color: #0D0D0D;
-    $quaternary-color: #385DA6;
-    $quinary-color: #5080BF;
+    $secondary-color: #BF946F;
+    $tertiary-color: #0A8CBF;
+    $quaternary-color: #0869A6;
+    $quinary-color: #085CA6;
 
 // Font Stack
     $primary-font: sans-serif;
     $secondary-font: serif;
 
+// Stylesheet
     html {
         background: $primary-color;
         font-family: $secondary-font;
@@ -17,7 +18,7 @@
     h1 {
         font-family: $primary-font;
         .title {
-            color: $quaternary-color;
+            color: $secondary-color;
         }
         .header {
             color: $quinary-color;
@@ -28,4 +29,25 @@
     p {
         font-family: $secondary-font;
         color: $tertiary-color;
+    }
+
+    .jumbotron {
+        background-color: $secondary-color;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    div {
+        background-color: $primary-color;
+        .container {
+            background-color: $primary-color;
+        }
+    }
+    
+    body {
+        background-color: $primary-color;
+    }
+
+    .btn {
+        background-color: $quaternary-color;
     }
