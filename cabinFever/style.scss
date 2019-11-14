@@ -6,8 +6,8 @@
     $quinary-color: #085CA6;
 
 // Font Stack
-    $primary-font: sans-serif;
-    $secondary-font: serif;
+    $primary-font: "english-grotesque", sans-serif;
+    $secondary-font: "serenity", serif;
 
 // Stylesheet
     html {
@@ -17,6 +17,8 @@
 
     h1 {
         font-family: $primary-font;
+        font-weight: 800;
+        font-size: 4rem;
         .title {
             color: $primary-color;
         }
@@ -29,6 +31,7 @@
     p {
         font-family: $secondary-font;
         color: $tertiary-color;
+        font-weight: 100;
     }
 
     .jumbotron {
@@ -54,13 +57,21 @@
     }
 
     #section0 {
+        position: relative;
+        top: 0%;
+        left: 0%;
+
         .layer {
             background-color: rgba(0, 0, 0, 0.5);
             h1 {
                 color: $primary-color;
+                position: absolute;
+                top: 50%;
             }
             p {
                 color: $primary-color;
+                position: absolute;
+                top: 57%;
             }
             position: absolute;
             top: 0%;

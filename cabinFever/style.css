@@ -1,22 +1,25 @@
 html {
   background: #F2E6D8;
-  font-family: serif;
+  font-family: "serenity", serif;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: "english-grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
 }
 h1 .title {
   color: #F2E6D8;
 }
 h1 .header {
   color: #085CA6;
-  font-family: serif;
+  font-family: "serenity", serif;
 }
 
 p {
-  font-family: serif;
+  font-family: "serenity", serif;
   color: #0A8CBF;
+  font-weight: 100;
 }
 
 .jumbotron {
@@ -41,6 +44,11 @@ body {
   background-color: #0869A6;
 }
 
+#section0 {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
 #section0 .layer {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -52,12 +60,12 @@ body {
 #section0 .layer h1 {
   color: #F2E6D8;
   position: absolute;
-  top: 55%;
+  top: 50%;
 }
 #section0 .layer p {
   color: #F2E6D8;
   position: absolute;
-  top: 60%;
+  top: 57%;
 }
 
 /*# sourceMappingURL=style.css.map */
