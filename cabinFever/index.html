@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
-        <title>Cabin Fever | A taste of summer</title>
-        
-    </head>
-    <body>
-        <div class="jumbotron">
-                Just testing the whole jumbotron thingy!
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="navbar btn-group">
-                        <a class="btn btn-lg" href="#">Home</a>
-                        <a class="btn btn-lg" href="#">About Us</a>
-                        <a class="btn btn-lg" href="#">Contact</a>
-                        <a class="btn btn-lg" href="#">Careers</a>
-                        <a class="btn btn-lg" href="#">Media</a>
-                    </div>
-            </div>
-        </div>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cabin Fever | A Taste of Summer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
 
-    </body>
-    <script src="js/bootstrap.js"></script>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="promoVid.mp4" type="video/mp4">
+		</video>
+		<div class="layer">
+			<h1>Cabin Fever</h1>
+			<p>A vitamin D reinforced energy drink. A taste of summer for those long winter months.</p>
+		</div>
+    </div>
+	<div class="section" id="section1">
+	    <p>This is page 2</p>
+	</div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+
+
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+</script>
+</body>
 </html>

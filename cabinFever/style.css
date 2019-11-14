@@ -7,7 +7,7 @@ h1 {
   font-family: sans-serif;
 }
 h1 .title {
-  color: #BF946F;
+  color: #F2E6D8;
 }
 h1 .header {
   color: #085CA6;
@@ -23,6 +23,7 @@ p {
   background-color: #BF946F;
   font-weight: 900;
   font-size: 3rem;
+  margin-bottom: 0rem;
 }
 
 div {
@@ -38,6 +39,25 @@ body {
 
 .btn {
   background-color: #0869A6;
+}
+
+#section0 .layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+#section0 .layer h1 {
+  color: #F2E6D8;
+  position: absolute;
+  top: 55%;
+}
+#section0 .layer p {
+  color: #F2E6D8;
+  position: absolute;
+  top: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

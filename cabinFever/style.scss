@@ -18,7 +18,7 @@
     h1 {
         font-family: $primary-font;
         .title {
-            color: $secondary-color;
+            color: $primary-color;
         }
         .header {
             color: $quinary-color;
@@ -35,6 +35,7 @@
         background-color: $secondary-color;
         font-weight: 900;
         font-size: 3rem;
+        margin-bottom: 0rem;
     }
 
     div {
@@ -50,4 +51,21 @@
 
     .btn {
         background-color: $quaternary-color;
+    }
+
+    #section0 {
+        .layer {
+            background-color: rgba(0, 0, 0, 0.5);
+            h1 {
+                color: $primary-color;
+            }
+            p {
+                color: $primary-color;
+            }
+            position: absolute;
+            top: 0%;
+            z-index: 4;
+            width: 100%;
+            height: 100%;
+        }
     }
