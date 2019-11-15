@@ -70,7 +70,7 @@
 
             .layer-text {
                 position: absolute;
-                top: 67%;
+                top: 50%;
                 z-index: 5;
                 background-color: rgba(0, 0, 0, 0);
                 color: $primary-color;
@@ -97,4 +97,14 @@
     h2 {
         font-family: $secondary-font;
         font-weight: 300;
+    }
+
+    .cabinBody{
+        font-family: $secondary-font;
+        font-size: 4rem;
+        line-height: .9;
+    }
+
+    .cabinFever {
+        font-size: 8rem;
     }

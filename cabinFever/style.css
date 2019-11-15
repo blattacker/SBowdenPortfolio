@@ -58,7 +58,7 @@ body {
 }
 #section0 .layer .layer-text {
   position: absolute;
-  top: 67%;
+  top: 50%;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0);
   color: #F2E6D8;
@@ -84,6 +84,16 @@ body {
 h2 {
   font-family: "serenity", serif;
   font-weight: 300;
+}
+
+.cabinBody {
+  font-family: "serenity", serif;
+  font-size: 4rem;
+  line-height: 0.9;
+}
+
+.cabinFever {
+  font-size: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
