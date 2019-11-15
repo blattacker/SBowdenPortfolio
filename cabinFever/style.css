@@ -81,4 +81,9 @@ body {
   z-index: 3;
 }
 
+h2 {
+  font-family: "serenity", serif;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=style.css.map */

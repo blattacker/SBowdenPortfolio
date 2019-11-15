@@ -102,6 +102,7 @@ html.fp-enabled,
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 #fp-nav.fp-right {
     right: 17px;
@@ -156,8 +157,8 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
@@ -166,10 +167,10 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 8px;
+    width: 8px;
     border: 0;
-    background: #333;
+    background: rgba(8, 92, 166, 0.4);
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
