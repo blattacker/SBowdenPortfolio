@@ -58,7 +58,7 @@ body {
 }
 #section0 .layer .layer-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0);
   color: #F2E6D8;
