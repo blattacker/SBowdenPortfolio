@@ -49,7 +49,7 @@ body {
   left: 0px;
 }
 #section0 .layer {
-  background: rgba(68, 68, 68, 0.5);
+  background: rgba(68, 68, 68, 0.7);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -104,6 +104,23 @@ h2 {
   min-height: 3rem;
   font-weight: 600;
   box-shadow: 0px 1px 3px #000;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #0A8CBF;
+}
+
+.cabinBrand {
+  position: absolute;
+  top: 0;
+  font-weight: 900;
+  font-family: "english-grotesque", sans-serif;
+  font-size: 2rem;
+  color: #0A8CBF;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */
