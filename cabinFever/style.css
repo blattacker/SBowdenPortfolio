@@ -90,12 +90,22 @@ h2 {
 
 .cabinBody {
   font-family: "serenity", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 0.9;
+}
+@media (min-width: 600px) {
+  .cabinBody {
+    font-size: 4rem;
+  }
 }
 
 .cabinFever {
-  font-size: 8rem;
+  font-size: 4rem;
+}
+@media (min-width: 600px) {
+  .cabinFever {
+    font-size: 8rem;
+  }
 }
 
 .navbar {
@@ -106,11 +116,12 @@ h2 {
   box-shadow: 0px 1px 3px #000;
   justify-content: flex-end;
   font-size: 1rem;
+  z-index: 9999;
 }
 
 .nav-link {
   font-weight: 600;
-  color: #0A8CBF;
+  color: #F2E6D8;
 }
 
 .cabinBrand {
@@ -119,8 +130,27 @@ h2 {
   font-weight: 900;
   font-family: "english-grotesque", sans-serif;
   font-size: 2rem;
-  color: #0A8CBF;
+  color: #F2E6D8;
   vertical-align: middle;
+}
+
+.navbar-collapse {
+  background: #333;
+  justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(242, 230, 216, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  border: 0px;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+}
+
+#navbarContent {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

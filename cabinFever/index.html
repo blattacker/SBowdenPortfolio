@@ -4,10 +4,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Cabin Fever | A Taste of Summer</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fullPage/dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" href="https://use.typekit.net/iol2jba.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg fixed-top">
@@ -17,23 +19,28 @@
 
 			</li>
 		</ul>
-		<ul class="navbar-nav mr-right">
-			<li class="nav-item">
-				<a href="#section0" class="nav-link">Home</a>
-			</li>
-			<li class="nav-item">
-					<a href="#" class="nav-link">About Us</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Products</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Contact</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Careers</a>
-			</li>
-		</ul>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-right ml-3">
+					<li class="nav-item mr-5">
+						<a href="#section0" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item mr-5">
+							<a href="about.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a href="products.html" class="nav-link">Products</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+					<li class="nav-item mr-5">
+						<a href="careers.html" class="nav-link">Careers</a>
+					</li>
+				</ul>
+			</div>
 	</nav>	
 
 <div id="fullpage">
@@ -109,13 +116,18 @@
 					<h3>2 SERVING recommended maximum per 24 hour period</h3>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-9 col-md-10 col-sm-12 col-xs-12">
+					<h3>Not recommended for use by children</h3>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 
 
-<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript" src="fullPage/dist/fullpage.js"></script>
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
 		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],

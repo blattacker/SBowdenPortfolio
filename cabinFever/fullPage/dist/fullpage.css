@@ -102,10 +102,10 @@ html.fp-enabled,
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
-    background-color: rgba(0, 0, 0, 0);
 }
 #fp-nav.fp-right {
     right: 17px;
+    background: rgb(0,0,0,0);
 }
 #fp-nav.fp-left {
     left: 17px;
@@ -120,6 +120,7 @@ html.fp-enabled,
     left: 0 !important;
     right: 0;
     margin: 0 auto !important;
+
 }
 .fp-slidesNav.fp-bottom {
     bottom: 17px;
@@ -157,8 +158,8 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
@@ -167,10 +168,10 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 8px;
-    width: 8px;
+    height: 4px;
+    width: 4px;
     border: 0;
-    background: rgba(8, 92, 166, 0.4);
+    background: #0869A6;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
