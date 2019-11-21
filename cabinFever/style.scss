@@ -1,175 +1,159 @@
-// Color Palette
-    $primary-color: #F2E6D8;
-    $primary-color-50: rgba(242, 230, 216, 0.8);
-
-    $secondary-color: #BF946F;
-    $seconday-color-50: rgba( 198, 141, 111, 0.5);
-
-    $tertiary-color: #0A8CBF;
+@import 'vars';
 
 
-    $quaternary-color: #0869A6;
 
+html {
+    background: $primary-color;
+    font-family: $secondary-font;
+}
 
-    $quinary-color: #085CA6;
-
-
-// Font Stack
-    $primary-font: "english-grotesque", sans-serif;
-    $secondary-font: "serenity", serif;
-
-// Screen sizes
-
-// Stylesheet
-    html {
-        background: $primary-color;
-        font-family: $secondary-font;
-    }
-
-    h1 {
-        font-family: $primary-font;
-        font-weight: 800;
+h1 {
+    font-family: $primary-font;
+    font-weight: 800;
+    font-size: 2rem;
+    @media (min-width: 600px) {
         font-size: 4rem;
-        .title {
-            color: $primary-color;
-        }
-        .header {
-            color: $quinary-color;
-            font-family: $secondary-font;
-        }
     }
-
-    p {
+    .title {
+        color: $primary-color;
+    }
+    .header {
+        color: $quinary-color;
         font-family: $secondary-font;
-        font-weight: 100;
     }
+}
 
-    .jumbotron {
-        background-color: $secondary-color;
-        font-weight: 900;
-        font-size: 3rem;
-        margin-bottom: 0rem;
-    }
+p {
+    font-family: $secondary-font;
+    font-weight: 100;
+}
 
-    div {
-        background-color: $primary-color;
-        .container {
-            background-color: $primary-color;
-        }
-    }
-    
-    body {
+div {
+    background-color: $primary-color;
+    .container {
         background-color: $primary-color;
     }
+}
 
-    .btn {
-        background-color: $quaternary-color;
-    }
+body {
+    background-color: $primary-color;
+}
 
-    #section0 {
-        position: relative;
+.btn {
+    background-color: $quaternary-color;
+}
+
+#section0 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    .layer {
+        background: rgba(68, 68, 68, 0.7);
+        position: absolute;
         top: 0px;
         left: 0px;
-
-        .layer {
-            background: rgba(68, 68, 68, 0.7);
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 4;
-            mix-blend-mode: multiply;
-        }
-
-        .layer-text {
-            position: absolute;
-            top: 45%;
-            z-index: 5;
-            background-color: rgba(0, 0, 0, 0);
-            color: $primary-color;
-        }
-    }
-
-
-    #myVideo {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 0px;
-        left: 0;
         width: 100%;
         height: 100%;
-        background-size: 100% 100%;
-        background-color: $primary-color;
-        background-image: url('./promoVid.mp4');
-        background-position: center center;
-        background-size: contain;
-        object-fit: cover;
-        z-index: 3;
-    }
-    h2 {
-        font-family: $secondary-font;
-        font-weight: 300;
+        z-index: 4;
+        mix-blend-mode: multiply;
     }
 
-    .cabinBody{
-        font-family: $secondary-font;
-        font-size: 2rem;
-        line-height: .9;
-       @media (min-width: 600px) {
-            font-size: 4rem;
-        }
-    }
-
-    .cabinFever {
-        font-size: 4rem;
-        @media (min-width: 600px) {
-            font-size: 8rem;
-        }
-    }
-
-    .navbar {
-        background: #333;
-        height: 5%;
-        min-height: 3rem;
-        font-weight: 600;
-        box-shadow: 0px 1px 3px #000;
-        justify-content: flex-end;
-        font-size: 1rem;
-        z-index: 9999;
-    }
-
-    .nav-link {
-        font-weight: 600;
-        color: $primary-color;
-    }
-
-    .cabinBrand {
+    .layer-text {
         position: absolute;
-        top: 0;
-        font-weight: 900; 
-        font-family: 'english-grotesque', sans-serif; 
-        font-size: 2rem;
+        top: 45%;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0);
         color: $primary-color;
-        vertical-align: middle;
+    }
+}
+
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: $primary-color;
+    background-image: url('./promoVid.mp4');
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+}
+h2 {
+    font-family: $secondary-font;
+    font-weight: 300;
+}
+
+.cabinBody{
+    font-family: $secondary-font;
+    font-size: 2rem;
+    line-height: .9;
+    @media (min-width: 600px) {
+        font-size: 4rem;
+    }
+}
+
+.cabinFever {
+    font-size: 4rem;
+    @media (min-width: 600px) {
+        font-size: 8rem;
+    }
+}
+
+.navbar {
+    background: #333;
+    height: 5%;
+    min-height: 3rem;
+    font-weight: 600;
+    box-shadow: 0px 1px 3px #000;
+    justify-content: flex-end;
+    font-size: 1rem;
+    z-index: 9999;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: $primary-color;
+}
+
+.cabinBrand {
+    position: absolute;
+    top: 0;
+    font-weight: 900; 
+    font-family: 'english-grotesque', sans-serif; 
+    font-size: 2rem;
+    color: $primary-color;
+    vertical-align: middle;
+}
+
+.navbar-collapse {
+    background: #333;
+    justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(242, 230, 216, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border: 0px;
     }
 
-    .navbar-collapse {
-        background: #333;
-        justify-content: flex-end;
-    }
+.navbar-toggler-icon:focus {
+        outline: none;
+        border: none;
+}
 
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(242, 230, 216, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        border: 0px;
-      }
+#navbarContent {
+    width: 50%;
+}
 
-    .navbar-toggler-icon:focus {
-          outline: none;
-          border: none;
+h3 {
+    font-size: 1rem;
+    @media (min-width: 600px) {
+        font-size: 2rem;
     }
-    
-    #navbarContent {
-        width: 50%;
-    }
+}

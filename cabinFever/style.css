@@ -6,7 +6,12 @@ html {
 h1 {
   font-family: "english-grotesque", sans-serif;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 h1 .title {
   color: #F2E6D8;
@@ -19,13 +24,6 @@ h1 .header {
 p {
   font-family: "serenity", serif;
   font-weight: 100;
-}
-
-.jumbotron {
-  background-color: #BF946F;
-  font-weight: 900;
-  font-size: 3rem;
-  margin-bottom: 0rem;
 }
 
 div {
@@ -151,6 +149,15 @@ h2 {
 
 #navbarContent {
   width: 50%;
+}
+
+h3 {
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
