@@ -8,7 +8,7 @@ h1 {
   font-weight: 800;
   font-size: 3rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   h1 {
     font-size: 6rem;
   }
@@ -26,7 +26,7 @@ p {
   font-weight: 100;
   font-size: 1rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   p {
     font-size: 1.5rem;
   }
@@ -100,16 +100,16 @@ h2 {
   font-size: 2rem;
   line-height: 0.9;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .cabinBody {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 }
 
 .cabinFever {
   font-size: 4rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .cabinFever {
     font-size: 8rem;
   }

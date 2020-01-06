@@ -11,7 +11,7 @@ h1 {
     font-family: $primary-font;
     font-weight: 800;
     font-size: 3rem;
-    @media (min-width: 1000px) {
+    @media (min-width: 1025px) {
         font-size: 6rem;
     }
     .title {
@@ -27,7 +27,7 @@ p {
     font-family: $secondary-font;
     font-weight: 100;
     font-size: 1rem;
-    @media (min-width: 1000px){
+    @media (min-width: 1025px){
         font-size: 1.5rem;
     }
 }
@@ -101,14 +101,14 @@ h2 {
     font-family: $secondary-font;
     font-size: 2rem;
     line-height: .9;
-    @media (min-width: 1000px) {
-        font-size: 4rem;
+    @media (min-width: 1025px) {
+        font-size: 1.5rem;
     }
 }
 
 .cabinFever {
     font-size: 4rem;
-    @media (min-width:1000px) {
+    @media (min-width:1025px) {
         font-size: 8rem;
     }
 }
