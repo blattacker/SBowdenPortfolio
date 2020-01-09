@@ -210,10 +210,10 @@ h3 {
 }
 
 .layer3-image {
-    max-height: 400px;
+    max-height:500px;
     background-image: url('assets/Bar.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -277,11 +277,19 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-    // background-image: url('assets/Headshot_001.jpg');
-    // background-position: center;
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // height: 100px;
-    // width: 100px;
-    // max-width: 90%;
-    // border-radius: 50%;
+
+.location-image {
+    background-image: url('assets/Warehouse.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.interior-image {
+    background-image: url('assets/Kegs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
