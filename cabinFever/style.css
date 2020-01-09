@@ -209,6 +209,14 @@ h3 {
   background: transparent;
 }
 
+.layer3-image {
+  max-height: 400px;
+  background-image: url("assets/Bar.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #submit {
   border: none;
   outline: 0px;
@@ -220,14 +228,48 @@ h3 {
   transition: all 95ms;
 }
 
-.container-fluid {
-  display: block;
-  max-width: 920px;
-  margin: auto;
-}
-
 a:hover {
   color: #ff2577;
+}
+
+.headshot1 {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("assets/Headshot_001.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headshot2 {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("assets/Headshot_002.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headshot3 {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("assets/Headshot_003.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headshot4 {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("assets/Headshot_004.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
