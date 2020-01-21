@@ -207,7 +207,7 @@ h3 {
         z-index: 5;
         background: transparent;
         line-height: 16px;
-        @media (min-width: 1280px) {
+        @media (min-width: 1100px) {
             line-height: 25px;
         }
         @media (min-width: 1370px) {
@@ -306,6 +306,13 @@ a:hover {
     @media (min-width: 1025px) {
         font-size: 16px;
     }
+    line-height: 12px;
+        @media (min-width: 1100px) {
+            line-height: 20px;
+        }
+        @media (min-width: 1370px) {
+            line-height: 32px;
+        }
 }
 
 .kegs {
@@ -340,7 +347,7 @@ textarea {
 }
  .taglineBody {
     line-height: 16px;
-    @media (min-width: 1280px) {
+    @media (min-width: 1100px) {
         line-height: 25px;
     }
     @media (min-width: 1370px) {
@@ -350,7 +357,17 @@ textarea {
 
 .tagline {
     line-height: 40px;
-        @media (min-width: 1280px) {
+        @media (min-width: 1100px) {
+            line-height: 55px;
+        }
+        @media (min-width: 1370px) {
+            line-height: 60px;
+        }
+}
+
+.aboutTitle {
+    line-height: 40px;
+        @media (min-width: 1100px) {
             line-height: 55px;
         }
         @media (min-width: 1370px) {

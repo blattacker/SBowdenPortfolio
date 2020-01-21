@@ -209,7 +209,7 @@ h3 {
   background: transparent;
   line-height: 16px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1100px) {
   #section2 .layer2-text {
     line-height: 25px;
   }
@@ -309,10 +309,21 @@ a:hover {
 
 .aboutUs {
   font-size: 10px;
+  line-height: 12px;
 }
 @media (min-width: 1025px) {
   .aboutUs {
     font-size: 16px;
+  }
+}
+@media (min-width: 1100px) {
+  .aboutUs {
+    line-height: 20px;
+  }
+}
+@media (min-width: 1370px) {
+  .aboutUs {
+    line-height: 32px;
   }
 }
 
@@ -356,7 +367,7 @@ textarea {
 .taglineBody {
   line-height: 16px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1100px) {
   .taglineBody {
     line-height: 25px;
   }
@@ -370,13 +381,27 @@ textarea {
 .tagline {
   line-height: 40px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1100px) {
   .tagline {
     line-height: 55px;
   }
 }
 @media (min-width: 1370px) {
   .tagline {
+    line-height: 60px;
+  }
+}
+
+.aboutTitle {
+  line-height: 40px;
+}
+@media (min-width: 1100px) {
+  .aboutTitle {
+    line-height: 55px;
+  }
+}
+@media (min-width: 1370px) {
+  .aboutTitle {
     line-height: 60px;
   }
 }
