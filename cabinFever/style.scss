@@ -338,3 +338,22 @@ textarea {
         width: 400px;
     }
 }
+ .taglineBody {
+    line-height: 16px;
+    @media (min-width: 1280px) {
+        line-height: 25px;
+    }
+    @media (min-width: 1370px) {
+        line-height: 35px;
+    }
+}
+
+.tagline {
+    line-height: 40px;
+        @media (min-width: 1280px) {
+            line-height: 55px;
+        }
+        @media (min-width: 1370px) {
+            line-height: 60px;
+        }
+}

@@ -353,4 +353,32 @@ textarea {
   }
 }
 
+.taglineBody {
+  line-height: 16px;
+}
+@media (min-width: 1280px) {
+  .taglineBody {
+    line-height: 25px;
+  }
+}
+@media (min-width: 1370px) {
+  .taglineBody {
+    line-height: 35px;
+  }
+}
+
+.tagline {
+  line-height: 40px;
+}
+@media (min-width: 1280px) {
+  .tagline {
+    line-height: 55px;
+  }
+}
+@media (min-width: 1370px) {
+  .tagline {
+    line-height: 60px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
