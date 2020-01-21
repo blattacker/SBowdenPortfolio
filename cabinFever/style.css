@@ -221,10 +221,10 @@ h3 {
 }
 
 .layer3-image {
-  max-height: 400px;
+  max-height: 500px;
   background-image: url("assets/Bar.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -351,6 +351,22 @@ textarea {
   textarea {
     width: 400px;
   }
+}
+
+.location-image {
+  background-image: url("assets/Warehouse.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.interior-image {
+  background-image: url("assets/Kegs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
