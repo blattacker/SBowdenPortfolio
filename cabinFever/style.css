@@ -6,11 +6,11 @@ html {
 h1 {
   font-family: "english-grotesque", sans-serif;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 48px;
 }
 @media (min-width: 1025px) {
   h1 {
-    font-size: 4rem;
+    font-size: 64px;
   }
 }
 h1 .title {
@@ -24,11 +24,11 @@ h1 .header {
 p {
   font-family: "serenity", serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 16px;
 }
 @media (min-width: 1025px) {
   p {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
@@ -97,32 +97,32 @@ h2 {
 
 .cabinBody {
   font-family: "serenity", serif;
-  font-size: 2rem;
+  font-size: 32px;
   line-height: 0.9;
 }
 @media (min-width: 1025px) {
   .cabinBody {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 .cabinFever {
-  font-size: 4rem;
+  font-size: 64px;
 }
 @media (min-width: 1025px) {
   .cabinFever {
-    font-size: 8rem;
+    font-size: 128px;
   }
 }
 
 .navbar {
   background: #333;
   height: 42px;
-  min-height: 3rem;
+  min-height: 48px;
   font-weight: 600;
   box-shadow: 0px 1px 3px #000;
   justify-content: flex-end;
-  font-size: 1rem;
+  font-size: 16px;
   z-index: 9999;
 }
 
@@ -136,7 +136,7 @@ h2 {
   top: 0;
   font-weight: 900;
   font-family: "english-grotesque", sans-serif;
-  font-size: 2rem;
+  font-size: 32px;
   color: #ff3b6e;
   vertical-align: middle;
 }
@@ -161,11 +161,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 @media (min-width: 1000px) {
   h3 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
@@ -207,6 +207,17 @@ h3 {
 #section2 .layer2-text {
   z-index: 5;
   background: transparent;
+  line-height: 16px;
+}
+@media (min-width: 1280px) {
+  #section2 .layer2-text {
+    line-height: 25px;
+  }
+}
+@media (min-width: 1370px) {
+  #section2 .layer2-text {
+    line-height: 35px;
+  }
 }
 
 .layer3-image {
@@ -234,42 +245,112 @@ a:hover {
 
 .headshot1 {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-image: url("assets/Headshot_001.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1440px) {
+  .headshot1 {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 .headshot2 {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-image: url("assets/Headshot_002.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1440px) {
+  .headshot2 {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 .headshot3 {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-image: url("assets/Headshot_003.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1440px) {
+  .headshot3 {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 .headshot4 {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-image: url("assets/Headshot_004.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 1440px) {
+  .headshot4 {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.aboutUs {
+  font-size: 10px;
+}
+@media (min-width: 1025px) {
+  .aboutUs {
+    font-size: 16px;
+  }
+}
+
+.kegs {
+  max-height: 400px;
+  background-image: url("assets/Kegs.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+input {
+  width: 250px;
+}
+@media (min-width: 1025px) {
+  input {
+    width: 400px;
+  }
+}
+
+select {
+  width: 250px;
+}
+@media (min-width: 1025px) {
+  select {
+    width: 400px;
+  }
+}
+
+textarea {
+  width: 250px;
+  height: 100px;
+}
+@media (min-width: 1025px) {
+  textarea {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
