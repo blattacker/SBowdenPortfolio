@@ -68,71 +68,32 @@ function generateDwarf() {
 //End Elf name generator
 
 //Begin Human name generator
-const dictionary = {
-    alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
-    vowels: ['A', 'E', 'I', 'O', 'U'],
-    consonants: ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z'],
-    flexible: ['Y', 'H', 'L', 'R'],
-};
+const femHumFirst = ['Haven', 'Mariam', 'Damaris', 'Adrianna', 'Liana', 'Leslie', 'Kara', 'Diana', 'Karli', 'Kendra', 'Mikayla', 'Giuliana', 'Camila', 'Natasha', 'Rory', 'Mariela', 'Jacquelyn', 'Annalise', 'Mylie', 'Cassandra', 'Madalynn', 'Yesenia', 'Kaylah', 'Cierra', 'Riya', 'Annika', 'Eleanor', 'Mattie', 'Hailee', 'Kaitlynn', 'Marianna', 'Tiana', 'Karla', 'Mckinley', 'Kenzie', 'Karissa', 'Jazlene', 'Lucy', 'Mina', 'Natalee', 'Amara', 'Rose', 'Amina', 'Sofia', 'Karma', 'Ryan', 'Ally', 'Selah', 'Adalyn', 'Micah'];
+const masHumFirst = ['Wyatt', 'Cesar', 'Maximillian', 'Kade', 'Raul', 'Armani', 'Jaylen', 'Terry', 'Remington', 'Elijah', 'Kareem', 'Ruben', 'Issac', 'Trevor', 'Ricky', 'Camron', 'Armando', 'Lamar', 'Makai', 'Dorian', 'Thaddeus', 'Cortez', 'Deven', 'Dennis', 'Osvaldo', 'Brenden', 'Cale', 'Jake', 'Ashton', 'Marlon', 'Karter', 'Cole', 'Layne', 'Kasey', 'Jovany', 'Memphis', 'Reed', 'Kristian', 'River', 'Andrew', 'Trey', 'Kelvin', 'Yahir', 'Jadiel', 'Gunnar', 'Peter', 'Jamie', 'Nico', 'Emilio', 'Ahmed'];
+const humanClan = ['Gilmore', 'Jefferson', 'Weber', 'Castaneda', 'Colon', 'Walter', 'Ferrell', 'Anthony', 'Gardner', 'Zavala', 'Velasquez', 'Morrow', 'Snyder', 'Kim', 'Hogan', 'Best', 'Bird', 'Obrien', 'Rosales', 'Serrano', 'Patterson', 'Guerrero', 'George', 'Bradford', 'Dickson', 'Dalton', 'Mckay', 'Norris', 'Meza', 'Byrd', 'Perry', 'Pitts', 'Gross', 'Little', 'Roth', 'Mclean', 'Walton', 'Wilkerson', 'Nguyen', 'Castro', 'Johnson', 'Carrillo', 'Willis', 'Huffman', 'Berg', 'Shea', 'Hester', 'Harmon', 'Velazquez', 'Cox'];
+let humanName = '';
 
-let humanName = {
-    firstName: '',
-    lastName: '',
-    lastStaged: '',
-};
-
-let dictionaryChooser = (stagedName) => {
-    if (stagedName.length === 0){
-        return 0;
-    } else if (humanName.lastStaged === 'Q') {
-        return 1;
-    } else if (dictionary.consonants.indexOf(humanName.lastStaged) === -1) {
-        return 2;
-    } else {
-        return 3;
-    };
-};
-
-function generateLetter(which, source) {
-    let i = Math.floor(Math.random()* source.length);
-    humanName.lastStaged = source[i];
-    if (which.length === 0) {
-        return source[i];
-    } else {
-        return source[i].toLowerCase();
-    }
-
-};
-
-function chooseDictionary(whichName) {
-    switch (dictionaryChooser(whichName)){
-        case 0:
-            return dictionary.alphabet;
-            break;
-        case 1:
-            return 'u';
-            break;
-        case 2:
-            return dictionary.consonants;
-            break;
-        case 3:
-            return dictionary.vowels;
-            break;
-    };
-};
-
-function generateName(nameToGenerate) {
-    //name = '';
-    let l = Math.floor(Math.random() *6) + 4;
-    for (let i = 0; i <= l; i++) {
-    nameToGenerate += generateLetter(nameToGenerate, chooseDictionary(nameToGenerate));
-    };
-    return nameToGenerate;
-};
+function getHuman(humanGender){
+    const firstHumIndex = Math.floor(Math.random() * 50);
+    const clanHumIndex = Math.floor(Math.random() * 50);
+    humanName += humanGender[firstHumIndex] + ' ' + humanClan[clanHumIndex];
+}
 
 function generateHuman() {
-    return `${generateName(humanName.firstName)} ${generateName(humanName.lastName)}`;
-
+    humanName= '';
+        if (gender(genderValue) === 'female') {
+            getHuman(femHumFirst);
+        } else if (gender(genderValue) === 'male') {
+            getHuman(masHumFirst);
+        } else {
+            const genderList = Math.floor(Math.random() * 2);
+            if (genderList > 0) {
+                getHuman(femHumFirst);
+            } else {
+                getHuman(masHumFirst);
+            };
+        };
+        return humanName;
 };
 // End Human Name Generator
 
