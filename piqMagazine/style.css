@@ -30,6 +30,7 @@ body {
     border-color: #000 #ccc #ccc ;
     border-radius: 3px;
     transition: transform .2s, box-shadow .5s;
+    align-content: center;
 }
 
 .card:hover {
@@ -115,4 +116,11 @@ p {
     font-weight: 600;
     font-size: 1em;
     text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 95%;
+    padding-top: 30px;
+    margin: 0 auto;
 }
