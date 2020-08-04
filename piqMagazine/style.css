@@ -63,7 +63,7 @@ body {
 .header {
     grid-area: header;
     font-weight: 700;
-    text-align: center;
+    /* text-align: center; */
     background-color: #fff;
     overflow: hidden;
     position: sticky;
@@ -118,7 +118,7 @@ p {
     text-align: center;
 }
 
-img {
+.imgCard {
     display: block;
     max-width: 95%;
     padding-top: 30px;
