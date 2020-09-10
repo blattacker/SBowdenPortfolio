@@ -30,7 +30,11 @@ body {
     border-color: #000 #ccc #ccc ;
     border-radius: 3px;
     transition: transform .2s, box-shadow .5s;
-    align-content: center;
+    place-content: center;
+}
+
+.cardcontent {
+    place-content: center;
 }
 
 .card:hover {
@@ -40,24 +44,28 @@ body {
 
 .huge {
     grid-column: span 6;
+    grid-row: span 1;
     background-color: #fff;
     margin: 10px;
 }
 
 .large {
     grid-column: span 4;
+    grid-row: span 1;
     background-color: #fff;
     margin: 10px;
 }
 
 .small {
     grid-column: span 2;
+    grid-row: span 1;
     background-color: #fff;
     margin: 10px;
 }
 
 .empty {
     grid-column: span 1;
+    grid-row: span 1;
 }
 
 .header {
@@ -100,6 +108,7 @@ body {
         "header header header header"
         ". body body ."
         "footer footer footer footer";
+    grid-auto-flow: column;
 }
 
 #holder {
