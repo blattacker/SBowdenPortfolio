@@ -1,0 +1,48 @@
+body{
+    background-color: ghostwhite;
+}
+
+.navbar {
+    background-color: ghostwhite;
+    overflow: hidden;
+    font-family: "Ink Free";
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.navbar a {
+    float: right;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: snow;
+
+}
+
+#line:hover{
+    background-color:ghostwhite;
+}
+
+#Logo {
+    float: left;
+}
+
+.promo {
+    text-align: center;
+    width: 50%;
+    height: 750px;
+    position: relative;
+    left: 25%;
+}
+
+.promo p {
+    float:inline-end;
+}
