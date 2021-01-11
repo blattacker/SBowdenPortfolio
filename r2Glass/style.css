@@ -1,5 +1,6 @@
 body{
     background-color: ghostwhite;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -16,10 +17,11 @@ body{
     float: right;
     color: cornflowerblue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 2rem;
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: bold;
+    border-right-style: solid;
 }
 
 .navbar a:hover {
@@ -27,22 +29,61 @@ body{
 
 }
 
-#line:hover{
-    background-color:ghostwhite;
-}
-
-#Logo {
+.logo {
     float: left;
+    font-size: 3rem;
+    color: cornflowerblue;
+    font-weight: bold;
+    padding: 1rem 2rem;
 }
 
-.promo {
-    text-align: center;
-    width: 50%;
-    height: 750px;
+.hide {
+    display: none;
+}
+
+.slideContainer {
+    width: 660px;
+    height: 880px;
     position: relative;
-    left: 25%;
+    margin: auto;
 }
 
-.promo p {
-    float:inline-end;
+.slideContainer .slide {
+    width: 660px;
+    height: 880px;
+    background-position: 0 0;
+}
+
+.slideContainer .slide1 {
+    background-image: url('assets/img/angel_001.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slideContainer .slide2 {
+    background-image: url('assets/img/angel_002.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slideContainer .slide3 {
+    background-image: url('assets/img/angel_003.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slick-dots {
+    color: black;
+}
+.imgCaption {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.imgCaption span {
+    background-color: rgba(248, 248, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
 }
